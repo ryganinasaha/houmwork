@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Parent />
+    <App />
   </React.StrictMode>
 );
 
@@ -15,24 +16,5 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-
-function Parent() {
-  const name = "Nick";
-  const user = {age: 32}
-
-  return <Children user={user} name={name}  test="100" />
-}
-
-
-function Children (props) {
-  console.log(props)
-
-  return (
-    <div>
-      Hello {props.name}. Age: {props.user.age}
-    </div>
-  )
-
-}
 
 
