@@ -1,0 +1,18 @@
+.block {
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+}
+
+.green {
+    background-color: green;
+}
+.grey {
+    background-color: grey;
+}
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
